@@ -1,10 +1,9 @@
 # Variables
 CXX = g++
-CXXFLAGS = -Wall -std=c++17
+CXXFLAGS = -Wall  -Wextra -Werror -std=c++17  -fsanitize=address -g
 PROGRAM = computor
 SOURCES = main.cpp
 
-# Default target
 all: $(PROGRAM)
 
 # Build the program
